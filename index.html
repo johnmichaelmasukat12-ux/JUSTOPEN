@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>May sulat para sa'yo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div class="scene" id="scene">
+  <div class="paper back"></div>
+  <div class="letter" id="letter">
+    <h2 id="title"></h2>
+    <p id="msg"></p>
+  </div>
+  <div class="paper lower"></div>
+  <div class="paper upper"></div>
+  <div class="deco" aria-hidden="true">
+    <div class="tw h"></div><div class="tw v"></div><div class="tw v b"></div>
+    <svg class="flora" viewBox="0 0 340 286">
+      <defs>
+        <g id="fl"><g fill="#ec8b93"><ellipse cy="-10" rx="3.4" ry="10"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(45)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(90)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(135)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(180)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(225)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(270)"/><ellipse cy="-10" rx="3.4" ry="10" transform="rotate(315)"/></g><circle r="3.2" fill="#c9505f"/></g>
+        <g id="lf"><ellipse cy="-10" rx="4.5" ry="11" fill="#5f8a5a"/></g>
+      </defs>
+      <g stroke="#4f7a4f" stroke-width="2.2" fill="none" stroke-linecap="round"><path d="M177 120C150 106 122 90 104 58"/><path d="M172 118C163 100 158 86 152 72"/><path d="M182 130C205 152 222 172 238 200"/></g>
+      <use href="#lf" transform="translate(140 100) rotate(-70)"/>
+      <use href="#lf" transform="translate(122 84) rotate(-110)"/>
+      <use href="#lf" transform="translate(150 112) rotate(50)"/>
+      <use href="#lf" transform="translate(160 92) rotate(30)"/>
+      <use href="#lf" transform="translate(200 152) rotate(120)"/>
+      <use href="#lf" transform="translate(220 172) rotate(-60)"/>
+      <use href="#lf" transform="translate(232 190) rotate(100)"/>
+      <use href="#fl" transform="translate(102 52) rotate(10)"/>
+      <use href="#fl" transform="translate(150 66) scale(.8) rotate(-15)"/>
+      <use href="#fl" transform="translate(210 198) scale(.7)"/>
+    </svg>
+    <div class="seal"><svg viewBox="0 0 40 40" width="26" height="26"><g stroke="rgba(240,200,205,.75)" stroke-width="1.6" fill="none" stroke-linecap="round"><path d="M20 32V10"/><path d="M20 26l-7-5M20 20l-7-5M20 14l-6-4M20 26l7-5M20 20l7-5M20 14l6-4"/></g></svg></div>
+  </div>
+</div>
+<button id="snd" type="button" aria-label="Music on/off">🔊</button>
+<button id="btn" type="button">Open</button>
+<script src="script.js"></script>
+</body>
+</html>
